@@ -1,6 +1,6 @@
 def getMenu():
 	print("\u001b[38;5;87m -----------------> MENU <----------------")
-	print("\u001b[38;5;141m1. Answer a Question!\n2. Escape the Snake!\n3. View or Sell Blooks\n4. View Profile (tokens)\n5. Shop\n6. Reset Account\n7. Quit and Save")
+	print("\u001b[38;5;141m1. Answer a Question!\n2. Escape the Snake!\n8. Cypto Hack (Beta)\n3. View or Sell Blooks\n4. View Profile (tokens)\n5. Shop\n6. Reset Account\n7. Quit and Save")
 	menuItem = input("\u001b[38;5;111mEnter a number: ")
 	return menuItem
 def cyptoHack(username):
@@ -30,7 +30,7 @@ def cyptoHack(username):
 		if gotCorrect == 2:
 			cyptoGot = random.randint(10, 130)
 			matprint(["Correct!", "You stole " + str(cyptoGot) + " cypto!"])
-			matprint(["END", "You got " + str(int(cyptoGot/7)) + " tokens!", "Returning to main menu..."])
+			matprint(["END", "You got " + str(int(cyptoGot/4)) + " tokens!", "Returning to main menu..."])
 			db[username + "tokens"] += int(cyptoGot/7)
 		else:
 			matprint(["Failed to log in!", "Incorrect password!"])

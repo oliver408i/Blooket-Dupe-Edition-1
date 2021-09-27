@@ -6,9 +6,6 @@ from snakeGame import runSnakeGame
 from util import clear, coolprint, coolprint2
 import time
 import random
-import sqlite3
-con = sqlite3.connect('storage.db')
-cur = con.cursor()
 
 global questionSet
 global answerSet
@@ -226,6 +223,7 @@ while True:
 			input("Press enter to return to the menu")
 	elif itemMenu == "7":
 		print("Thanks for playing! Your blooks and tokens have been saved.\nJust put in the username you used (" + username + ") next time!")
+		print("Write any issues at https://github.com/oliver408i/Blooket-Dupe-Edition-1/issues")
 		break
 	elif itemMenu == "8":
 		cyptoHack(username)
