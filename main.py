@@ -6,6 +6,7 @@ from snakeGame import runSnakeGame
 from util import clear, coolprint, coolprint2
 import time
 import random
+import math
 
 global questionSet
 global answerSet
